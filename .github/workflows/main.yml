@@ -1,0 +1,10 @@
+name: Technical Dept
+on: [push]
+
+jobs:
+  weakSATDAction:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run weakSATD Action
+        uses: matteocamilli/weak_sadt_repo@v0.0.3
