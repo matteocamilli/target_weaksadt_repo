@@ -36,7 +36,7 @@ git commit -m 'my first WeakSATD check in a CI/CD workflow'
 git push origin master
 ```
 
-The job executed after checking out the current version of the sources emits the  outcome shown in the screenshot below. The screen shows that the `WeakSATD` tool identifies two weaknesses within SATD instances found in the `C/chromiumExample.c` source file (lines 129, 159):
+An extract of the results of the `WeakSATD Action` job executed after checking out the current version is shown in the screenshot below. The extract shows that the `WeakSATD` tool identifies two weaknesses within SATD instances found in the `C/chromiumExample.c` source file (lines 129, 159):
 * [CWE-Issue 676](https://cwe.mitre.org/data/definitions/676.html): Use of Potentially Dangerous Function;
 * [CWE-Issue 242](https://cwe.mitre.org/data/definitions/242.html): Use of Inherently Dangerous Function.
 
